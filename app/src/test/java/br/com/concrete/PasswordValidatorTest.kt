@@ -42,8 +42,15 @@ class PasswordValidatorTest {
     }
 
     @Test
+    fun givenPasswordIsLongerThan16_whenValidate_shouldReturnFalse() {
+        val result = passwordValidator.isValid("1aA#12351aA#12351aA#12351aA#12351a")
+
+        Assert.assertFalse(result)
+    }
+
+    @Test
     fun givenPasswordIsValid_whenValidate_shouldReturnTrue() {
-        val result = passwordValidator.isValid("1aA#1235")
+        val result = passwordValidator.isValid("1aA#d1235")
 
         Assert.assertTrue(result)
     }
