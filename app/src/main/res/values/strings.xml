@@ -4,6 +4,5 @@
     <string name="email_hint">Email</string>
     <string name="login">Login</string>
     <string name="email_is_empty_error">Email is empty</string>
-    <string name="password_is_empty_error">Password is empty</string>
-    <string name="invalid_password_error">Invalid password</string>
+    <string name="invalid_password_error">Invalid or Empty Password</string>
 </resources>

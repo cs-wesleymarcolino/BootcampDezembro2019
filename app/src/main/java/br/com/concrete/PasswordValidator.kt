@@ -11,5 +11,5 @@ class PasswordValidator {
 
     fun isValid(password: String) = validations.all { validation ->
         password.contains(validation)
-    }
+    } && password.isNotEmpty()
 }

@@ -49,6 +49,13 @@ class PasswordValidatorTest {
     }
 
     @Test
+    fun givenPasswordEmpty_whenValidate_shouldReturnFalse() {
+        val result = passwordValidator.isValid("")
+
+        Assert.assertFalse(result)
+    }
+
+    @Test
     fun givenPasswordIsValid_whenValidate_shouldReturnTrue() {
         val result = passwordValidator.isValid("1aA#d1235")
 

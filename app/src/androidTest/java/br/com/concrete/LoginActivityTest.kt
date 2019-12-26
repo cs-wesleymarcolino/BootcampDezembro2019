@@ -32,18 +32,6 @@ class LoginActivityTest {
     }
 
     @Test
-    fun givenPasswordIsEmpty_whenLogin_shouldShowPasswordIsEmptyError() {
-        loginAct {
-            typeValidEmail()
-            clickLogin()
-        }
-
-        loginAssert {
-            checkMessageIsShown(R.string.password_is_empty_error)
-        }
-    }
-
-    @Test
     fun givenPasswordIsInvalid_whenLogin_shouldShowInvalidPasswordError() {
         loginAct {
             typeValidEmail()
